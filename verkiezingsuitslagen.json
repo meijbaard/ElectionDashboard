@@ -1,0 +1,79 @@
+{
+  "verkiezingen": [
+    {
+      "verkiezing_naam": "Tweede Kamer 2021",
+      "verkiezing_type": "TK",
+      "datum": "2021-03-17",
+      "uitslagen": [
+        {
+          "stembureau": "Stembureau Gemeentehuis Baarn (publieksplein) (postcode: 3743 BA)",
+          "buurt": "Centrum",
+          "postcode": "3743BA",
+          "stemmen": [
+            { "partij": "VVD", "aantal": 353 },
+            { "partij": "PVV (Partij voor de Vrijheid)", "aantal": 74 },
+            { "partij": "CDA", "aantal": 78 },
+            { "partij": "D66", "aantal": 344 },
+            { "partij": "GROENLINKS", "aantal": 88 },
+            { "partij": "SP (Socialistische Partij)", "aantal": 40 },
+            { "partij": "Partij van de Arbeid (P.v.d.A.)", "aantal": 65 },
+            { "partij": "ChristenUnie", "aantal": 31 },
+            { "partij": "Partij voor de Dieren", "aantal": 44 },
+            { "partij": "50PLUS", "aantal": 17 },
+            { "partij": "Staatkundig Gereformeerde Partij (SGP)", "aantal": 4 },
+            { "partij": "DENK", "aantal": 1 },
+            { "partij": "Forum voor Democratie", "aantal": 53 },
+            { "partij": "BIJ1", "aantal": 6 },
+            { "partij": "JA21", "aantal": 26 },
+            { "partij": "CODE ORANJE", "aantal": 2 },
+            { "partij": "Volt", "aantal": 51 },
+            { "partij": "NIDA", "aantal": 0 },
+            { "partij": "Piratenpartij", "aantal": 1 },
+            { "partij": "LP (Libertaire Partij)", "aantal": 0 },
+            { "partij": "JONG", "aantal": 5 },
+            { "partij": "Splinter", "aantal": 2 },
+            { "partij": "BBB", "aantal": 3 },
+            { "partij": "NLBeter", "aantal": 0 },
+            { "partij": "Lijst Henk Krol", "aantal": 1 },
+            { "partij": "OPRECHT", "aantal": 0 },
+            { "partij": "JEZUS LEEFT", "aantal": 0 },
+            { "partij": "Trots op Nederland (TROTS)", "aantal": 0 },
+            { "partij": "U-Buntu Connected Front", "aantal": 0 },
+            { "partij": "Blanco", "aantal": 2 },
+            { "partij": "Wij zijn Nederland", "aantal": 0 },
+            { "partij": "Partij van de Eenheid", "aantal": 0 },
+            { "partij": "DE FEESTPARTIJ (DFP)", "aantal": 0 },
+            { "partij": "Vrij en Sociaal Nederland", "aantal": 0 },
+            { "partij": "Partij voor de Republiek", "aantal": 0 },
+            { "partij": "Modern Nederland", "aantal": 0 },
+            { "partij": "De Groenen", "aantal": 0 }
+          ]
+        }
+      ]
+    },
+    {
+      "verkiezing_naam": "Europees Parlement 2024",
+      "verkiezing_type": "EP",
+      "datum": "2024-06-06",
+      "uitslagen": []
+    },
+    {
+      "verkiezing_naam": "Gemeenteraad Baarn 2022",
+      "verkiezing_type": "GR",
+      "datum": "2022-03-16",
+      "uitslagen": []
+    },
+    {
+      "verkiezing_naam": "Provinciale Staten Utrecht 2015",
+      "verkiezing_type": "PS",
+      "datum": "2015-03-18",
+      "uitslagen": []
+    },
+    {
+      "verkiezing_naam": "Gemeenteraad Baarn 2018",
+      "verkiezing_type": "GR",
+      "datum": "2018-03-21",
+      "uitslagen": []
+    }
+  ]
+}
