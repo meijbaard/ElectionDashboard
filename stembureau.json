@@ -1,142 +1,177 @@
 [
   {
     "stembureau": "Stembureau Gemeentehuis Baarn ing Laanstraat 1 (postcode: 3743 BA)",
-    "postcode": "3743BA"
+    "postcode": "3743BA",
+    "buurt": "Centrum"
   },
   {
     "stembureau": "Stembureau Basisschool De Uitkijck (postcode: 3742 RC)",
-    "postcode": "3742RC"
+    "postcode": "3742RC",
+    "buurt": "Nieuwe-Oosterhei"
   },
   {
     "stembureau": "Stembureau Maria Koningin Kerk (postcode: 3742 XM)",
-    "postcode": "3742XM"
+    "postcode": "3742XM",
+    "buurt": "Eemdal-Zuid"
   },
   {
     "stembureau": "Stembureau Guido de Bresschool ing Maatkampweg (postcode: 3742 TG)",
-    "postcode": "3742TG"
+    "postcode": "3742TG",
+    "buurt": "Oude-Oosterhei"
   },
   {
     "stembureau": "Stembureau Gebouw De Pool (postcode: 3742 RL)",
-    "postcode": "3742RL"
+    "postcode": "3742RL",
+    "buurt": "Oude-Oosterhei"
   },
   {
     "stembureau": "Stembureau Gebouw Elan (postcode: 3742 SJ)",
-    "postcode": "3742SJ"
+    "postcode": "3742SJ",
+    "buurt": "Nieuwe-Oosterhei"
   },
   {
     "stembureau": "Stembureau NS station (postcode: 3743 KM)",
-    "postcode": "3743KM"
+    "postcode": "3743KM",
+    "buurt": "Pekingpark"
   },
   {
     "stembureau": "Stembureau Gebouw Brandpunt (postcode: 3743 KN)",
-    "postcode": "3743KN"
+    "postcode": "3743KN",
+    "buurt": "Wilhelminapark"
   },
   {
     "stembureau": "Rest. Greenfield's ingang  Chopinln (postcode: 3741 GS)",
-    "postcode": "3741GS"
+    "postcode": "3741GS",
+    "buurt": "Componistenwijk"
   },
   {
     "stembureau": "Stembureau Dorpshuis de Furs (postcode: 3749 AA)",
-    "postcode": "3749AA"
+    "postcode": "3749AA",
+    "buurt": "Lage Vuursche"
   },
   {
     "stembureau": "Stembureau Verzorgingstehuis De Blinkert (postcode: 3741 BE)",
-    "postcode": "3741BE"
+    "postcode": "3741BE",
+    "buurt": "Professorenwijk"
   },
   {
     "stembureau": "Stembureau Brandweerkazerne (postcode: 3741 WE)",
-    "postcode": "3741WE"
+    "postcode": "3741WE",
+    "buurt": "Zandvoort"
   },
   {
     "stembureau": "Stembureau Woon- en zorgcentrum Santvoorde (postcode: 3741 VJ)",
-    "postcode": "3741VJ"
+    "postcode": "3741VJ",
+    "buurt": "Professorenwijk"
   },
   {
     "stembureau": "Stembureau De Speeldoos (postcode: 3741 TA)",
-    "postcode": "3741TA"
+    "postcode": "3741TA",
+    "buurt": "Schilderswijk"
   },
   {
     "stembureau": "Stembureau Gemeentehuis Baarn (publieksplein) (postcode: 3743 BA)",
-    "postcode": "3743BA"
+    "postcode": "3743BA",
+    "buurt": "Centrum"
   },
   {
     "stembureau": "Stembureau Basisschool De Uitkijck (aula) (postcode: 3742 RC)",
-    "postcode": "3742RC"
+    "postcode": "3742RC",
+    "buurt": "Nieuwe-Oosterhei"
   },
   {
     "stembureau": "Stembureau Gebouw De Leuning (postcode: 3749 AE)",
-    "postcode": "3749AE"
+    "postcode": "3749AE",
+    "buurt": "Lage Vuursche"
   },
   {
     "stembureau": "Stembureau De Speeldoos (stemlokaal 1) (postcode: 3741 TA)",
-    "postcode": "3741TA"
+    "postcode": "3741TA",
+    "buurt": "Schilderswijk"
   },
   {
     "stembureau": "Stembureau De Speeldoos (stemlokaal 2) (postcode: 3741 TA)",
-    "postcode": "3741TA"
+    "postcode": "3741TA",
+    "buurt": "Schilderswijk"
   },
   {
     "stembureau": "Stembureau SV Baarn (postcode: 3741 RS)",
-    "postcode": "3741RS"
+    "postcode": "3741RS",
+    "buurt": "Schilderswijk"
   },
   {
     "stembureau": "Stembureau Drive through (Gemeentewerf) (postcode: 3741 MR)",
-    "postcode": "3741MR"
+    "postcode": "3741MR",
+    "buurt": "Noordschil"
   },
   {
     "stembureau": "Stembureau Wintertuin (postcode: 3742 AK)",
-    "postcode": "3742AK"
+    "postcode": "3742AK",
+    "buurt": "Schoonoordpark"
   },
   {
     "stembureau": "Stembureau De Blinkert (postcode: 3741 BE)",
-    "postcode": "3741BE"
+    "postcode": "3741BE",
+    "buurt": "Professorenwijk"
   },
   {
     "stembureau": "Stembureau Amerpoort (bijzonder stemlokaal) (postcode: 3744 PA)",
-    "postcode": "3744PA"
+    "postcode": "3744PA",
+    "buurt": "Verspreide huizen Baarn"
   },
   {
     "stembureau": "Stembureau Santvoorde (bijzonder stemlokaal) (postcode: 3741 VJ)",
-    "postcode": "3741VJ"
+    "postcode": "3741VJ",
+    "buurt": "Professorenwijk"
   },
   {
     "stembureau": "Stembureau Gemeentehuis Baarn (maandag) (postcode: 3743 BA)",
-    "postcode": "3743BA"
+    "postcode": "3743BA",
+    "buurt": "Centrum"
   },
   {
     "stembureau": "Stembureau NS station (maandag) (postcode: 3743 KM)",
-    "postcode": "3743KM"
+    "postcode": "3743KM",
+    "buurt": "Pekingpark"
   },
   {
     "stembureau": "Stembureau Gemeentehuis Baarn (dinsdag) (postcode: 3743 BA)",
-    "postcode": "3743BA"
+    "postcode": "3743BA",
+    "buurt": "Centrum"
   },
   {
     "stembureau": "Stembureau NS station (dinsdag) (postcode: 3743 KM)",
-    "postcode": "3743KM"
+    "postcode": "3743KM",
+    "buurt": "Pekingpark"
   },
   {
     "stembureau": "Stembureau Gemeentehuis Baarn (Stationsweg) (postcode: 3743 EN)",
-    "postcode": "3743EN"
+    "postcode": "3743EN",
+    "buurt": "Centrum"
   },
   {
     "stembureau": "Stembureau Gemeentehuis Baarn (Laanstraat) (postcode: 3743 BE)",
-    "postcode": "3743BE"
+    "postcode": "3743BE",
+    "buurt": "Centrum"
   },
   {
     "stembureau": "Stembureau Berg en Dal (Apostolisch Genootschap) (postcode: 3743 AR)",
-    "postcode": "3743AR"
+    "postcode": "3743AR",
+    "buurt": "Wilhelminapark"
   },
   {
     "stembureau": "Stembureau NS station (pleinzijde) (postcode: 3743 KM)",
-    "postcode": "3743KM"
+    "postcode": "3743KM",
+    "buurt": "Pekingpark"
   },
   {
     "stembureau": "Stembureau NS Station (spoorzijde) (postcode: 3743 KM)",
-    "postcode": "3743KM"
+    "postcode": "3743KM",
+    "buurt": "Pekingpark"
   },
   {
     "stembureau": "Stembureau Briefstembureau (gemeentehuis) (postcode: 3743 EN)",
-    "postcode": "3743EN"
+    "postcode": "3743EN",
+    "buurt": "Centrum"
   }
 ]
