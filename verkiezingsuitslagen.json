@@ -1,290 +1,88 @@
 {
     "3741 BE": {
         "stembureaus": [
-            "Stembureau Verzorgingstehuis \"De Blinkert\"",
-            "Stembureau Verzorgingstehuis De Blinkert",
-            "Stembureau De Blinkert"
-        ],
-        "buurten": [
-            "Professorenwijk"
+            "Stembureau Verzorgingstehuis De Blinkert"
         ],
         "verkiezingen": [
-            {
-                "jaar": 2014,
-                "type": "GR",
-                "resultaten": {
-                    "VVD": 108,
-                    "CDA": 121,
-                    "ChristenUnie-SGP": 69,
-                    "Baarnse Onafhankelijke Partij (BOP)": 179,
-                    "LTS (Lijst Tinus Snyders)": 38,
-                    "D66": 111,
-                    "PvdA": 115,
-                    "GroenLinks": 76
-                }
-            },
-            {
-                "jaar": 2017,
-                "type": "TK",
-                "resultaten": {
-                    "VVD": 231,
-                    "CDA": 134,
-                    "PVV (Partij voor de Vrijheid)": 117,
-                    "SP (Socialistische Partij)": 83,
-                    "ChristenUnie": 55,
-                    "Staatkundig Gereformeerde Partij (SGP)": 15,
-                    "50PLUS": 28,
-                    "Partij voor de Dieren": 33,
-                    "Libertarische Partij (LP)": 3,
-                    "DENK": 1,
-                    "Forum voor Democratie": 12,
-                    "GeenPeil": 1,
-                    "Niet Stemmers": 1,
-                    "PvdA": 115,
-                    "GroenLinks": 76
-                }
-            },
             {
                 "jaar": 2018,
                 "type": "GR",
                 "resultaten": {
-                    "VVD": 140,
-                    "CDA": 101,
-                    "ChristenUnie-SGP": 67,
-                    "Baarnse Onafhankelijke Partij (BOP)": 135,
-                    "LTS (Lijst Tinus Snyders)": 28,
-                    "VoorBaarn": 242,
-                    "D66": 109,
-                    "PvdA": 89,
-                    "GroenLinks": 134
-                }
-            },
-            {
-                "jaar": 2019,
-                "type": "PS",
-                "resultaten": {
-                    "VVD": 152,
-                    "CDA": 80,
-                    "PVV (Partij voor de Vrijheid)": 47,
-                    "SP (Socialistische Partij)": 35,
-                    "ChristenUnie": 44,
-                    "Staatkundig Gereformeerde Partij (SGP)": 7,
-                    "50PLUS": 44,
-                    "Partij voor de Dieren": 38,
-                    "DENK": 3,
-                    "Forum voor Democratie": 147,
-                    "U26 GEMEENTEN": 10,
-                    "D66": 104,
-                    "PvdA": 83,
-                    "GroenLinks": 131
-                }
-            },
-            {
-                "jaar": 2022,
-                "type": "GR",
-                "resultaten": {
-                    "VVD": 108,
-                    "CDA": 77,
-                    "ChristenUnie": 73,
-                    "50PLUS": 86,
-                    "VoorBaarn": 250,
-                    "D66": 84,
-                    "PvdA": 97,
-                    "GroenLinks": 121
-                }
-            },
-            {
-                "jaar": 2023,
-                "type": "TK",
-                "resultaten": {
-                    "VVD": 225,
-                    "CDA": 36,
-                    "PVV (Partij voor de Vrijheid)": 239,
-                    "SP (Socialistische Partij)": 26,
-                    "ChristenUnie": 40,
-                    "Staatkundig Gereformeerde Partij (SGP)": 9,
-                    "50PLUS": 19,
-                    "Partij voor de Dieren": 41,
-                    "DENK": 4,
-                    "Forum voor Democratie": 26,
-                    "Volt": 24,
-                    "JA21": 13,
-                    "BBB": 36,
-                    "BIJ1": 4,
-                    "BVNL / Groep Van Haga": 4,
-                    "Nieuw Sociaal Contract": 105,
-                    "Splinter": 4,
-                    "LEF - Voor de Nieuwe Generatie": 1,
-                    "Samen voor Nederland": 1,
-                    "Nederland met een PLAN": 1,
-                    "D66": 133,
-                    "GroenLinks/PvdA": 225
+                    "Baarnse Onafhankelijke Partij (BOP)": 125,
+                    "VVD": 138,
+                    "Democraten 66 (D66)": 109,
+                    "CDA": 114,
+                    "GROENLINKS": 163,
+                    "Partij van de Arbeid (P.v.d.A.)": 77,
+                    "LTS (Lijst Tinus Snyders)": 9,
+                    "ChristenUnie-SGP": 110,
+                    "VoorBaarn": 218
                 }
             }
         ]
     },
     "3741 GS": {
         "stembureaus": [
-            "Stembureau Greenfields"
-        ],
-        "buurten": [
-            "Componistenwijk"
-        ],
-        "verkiezingen": [
-            {
-                "jaar": 2014,
-                "type": "GR",
-                "resultaten": {
-                    "VVD": 156,
-                    "CDA": 44,
-                    "ChristenUnie-SGP": 18,
-                    "Baarnse Onafhankelijke Partij (BOP)": 49,
-                    "LTS (Lijst Tinus Snyders)": 15,
-                    "D66": 138,
-                    "PvdA": 37,
-                    "GroenLinks": 50
-                }
-            }
-        ]
-    },
-    "3741 MR": {
-        "stembureaus": [
-            "Stembureau Drive through (Gemeentewerf)"
-        ],
-        "buurten": [
-            "Componistenwijk"
-        ],
-        "verkiezingen": [
-            {
-                "jaar": 2022,
-                "type": "GR",
-                "resultaten": {
-                    "VVD": 15,
-                    "CDA": 7,
-                    "ChristenUnie": 10,
-                    "50PLUS": 10,
-                    "VoorBaarn": 16,
-                    "D66": 18,
-                    "PvdA": 1,
-                    "GroenLinks": 9
-                }
-            }
-        ]
-    },
-    "3741 RS": {
-        "stembureaus": [
-            "Stembureau SV Baarn"
-        ],
-        "buurten": [
-            "Schilderswijk"
-        ],
-        "verkiezingen": [
-            {
-                "jaar": 2022,
-                "type": "GR",
-                "resultaten": {
-                    "VVD": 31,
-                    "CDA": 9,
-                    "ChristenUnie": 3,
-                    "50PLUS": 6,
-                    "VoorBaarn": 46,
-                    "D66": 13,
-                    "PvdA": 13,
-                    "GroenLinks": 12
-                }
-            }
-        ]
-    },
-    "3741 TA": {
-        "stembureaus": [
-            "Stembureau De Speeldoos",
-            "Stembureau Theater De Speeldoos"
-        ],
-        "buurten": [
-            "Eemdal-Noord",
-            "Eemland waaronder Eembrugge",
-            "Schilderswijk"
+            "Stembureau Greenfields ingang A Chopinln"
         ],
         "verkiezingen": [
             {
                 "jaar": 2018,
                 "type": "GR",
                 "resultaten": {
-                    "VVD": 136,
-                    "CDA": 115,
-                    "ChristenUnie-SGP": 44,
-                    "Baarnse Onafhankelijke Partij (BOP)": 106,
-                    "LTS (Lijst Tinus Snyders)": 18,
-                    "VoorBaarn": 339,
-                    "D66": 122,
-                    "PvdA": 132,
-                    "GroenLinks": 185
+                    "Baarnse Onafhankelijke Partij (BOP)": 26,
+                    "VVD": 171,
+                    "Democraten 66 (D66)": 139,
+                    "CDA": 57,
+                    "GROENLINKS": 78,
+                    "Partij van de Arbeid (P.v.d.A.)": 41,
+                    "LTS (Lijst Tinus Snyders)": 10,
+                    "ChristenUnie-SGP": 19,
+                    "VoorBaarn": 62
                 }
-            },
+            }
+        ]
+    },
+    "3741 TA": {
+        "stembureaus": [
+            "Stembureau De Speeldoos"
+        ],
+        "verkiezingen": [
             {
-                "jaar": 2022,
+                "jaar": 2018,
                 "type": "GR",
                 "resultaten": {
-                    "VVD": 130,
-                    "CDA": 124,
-                    "ChristenUnie": 47,
-                    "50PLUS": 102,
-                    "VoorBaarn": 353,
-                    "D66": 128,
-                    "PvdA": 143,
-                    "GroenLinks": 195
-                }
-            },
-            {
-                "jaar": 2023,
-                "type": "TK",
-                "resultaten": {
-                    "VVD": 401,
-                    "CDA": 63,
-                    "PVV (Partij voor de Vrijheid)": 368,
-                    "SP (Socialistische Partij)": 57,
-                    "ChristenUnie": 60,
-                    "Staatkundig Gereformeerde Partij (SGP)": 13,
-                    "50PLUS": 33,
-                    "Partij voor de Dieren": 60,
-                    "DENK": 3,
-                    "Forum voor Democratie": 37,
-                    "Volt": 31,
-                    "JA21": 17,
-                    "BBB": 54,
-                    "BIJ1": 4,
-                    "Piratenpartij - De Groenen": 2,
-                    "BVNL / Groep Van Haga": 17,
-                    "Nieuw Sociaal Contract": 261,
-                    "Splinter": 4,
-                    "LP (Libertaire Partij)": 1,
-                    "LEF - Voor de Nieuwe Generatie": 2,
-                    "D66": 187,
-                    "GroenLinks/PvdA": 384
+                    "Baarnse Onafhankelijke Partij (BOP)": 106,
+                    "VVD": 136,
+                    "Democraten 66 (D66)": 122,
+                    "CDA": 115,
+                    "GROENLINKS": 185,
+                    "Partij van de Arbeid (P.v.d.A.)": 132,
+                    "LTS (Lijst Tinus Snyders)": 18,
+                    "ChristenUnie-SGP": 44,
+                    "VoorBaarn": 339
                 }
             }
         ]
     },
     "3741 VJ": {
         "stembureaus": [
-            "Stembureau Santvoorde (bijzonder stemlokaal)"
-        ],
-        "buurten": [
-            "Staatsliedenwijk"
+            "Stembureau Woon- en zorgcentrum Santvoorde"
         ],
         "verkiezingen": [
             {
-                "jaar": 2022,
+                "jaar": 2018,
                 "type": "GR",
                 "resultaten": {
-                    "VVD": 40,
-                    "CDA": 64,
-                    "ChristenUnie": 31,
-                    "50PLUS": 85,
-                    "VoorBaarn": 125,
-                    "D66": 37,
-                    "PvdA": 58,
-                    "GroenLinks": 55
+                    "Baarnse Onafhankelijke Partij (BOP)": 88,
+                    "VVD": 100,
+                    "Democraten 66 (D66)": 110,
+                    "CDA": 122,
+                    "GROENLINKS": 79,
+                    "Partij van de Arbeid (P.v.d.A.)": 69,
+                    "LTS (Lijst Tinus Snyders)": 19,
+                    "ChristenUnie-SGP": 61,
+                    "VoorBaarn": 131
                 }
             }
         ]
@@ -293,22 +91,20 @@
         "stembureaus": [
             "Stembureau Brandweerkazerne"
         ],
-        "buurten": [
-            "Staatsliedenwijk"
-        ],
         "verkiezingen": [
             {
-                "jaar": 2014,
+                "jaar": 2018,
                 "type": "GR",
                 "resultaten": {
-                    "VVD": 113,
-                    "CDA": 97,
-                    "ChristenUnie-SGP": 34,
-                    "Baarnse Onafhankelijke Partij (BOP)": 125,
-                    "LTS (Lijst Tinus Snyders)": 38,
-                    "D66": 103,
-                    "PvdA": 154,
-                    "GroenLinks": 105
+                    "Baarnse Onafhankelijke Partij (BOP)": 86,
+                    "VVD": 243,
+                    "Democraten 66 (D66)": 162,
+                    "CDA": 88,
+                    "GROENLINKS": 154,
+                    "Partij van de Arbeid (P.v.d.A.)": 98,
+                    "LTS (Lijst Tinus Snyders)": 13,
+                    "ChristenUnie-SGP": 58,
+                    "VoorBaarn": 168
                 }
             }
         ]
@@ -317,71 +113,20 @@
         "stembureaus": [
             "Stembureau Zorgcentrum Schoonoord"
         ],
-        "buurten": [
-            "Schoonoordpark"
-        ],
-        "verkiezingen": [
-            {
-                "jaar": 2014,
-                "type": "GR",
-                "resultaten": {
-                    "VVD": 148,
-                    "CDA": 187,
-                    "ChristenUnie-SGP": 67,
-                    "Baarnse Onafhankelijke Partij (BOP)": 207,
-                    "LTS (Lijst Tinus Snyders)": 81,
-                    "D66": 161,
-                    "PvdA": 92,
-                    "GroenLinks": 98
-                }
-            }
-        ]
-    },
-    "3742 AK": {
-        "stembureaus": [
-            "Stembureau Wintertuin"
-        ],
-        "buurten": [
-            "Schoonoordpark"
-        ],
-        "verkiezingen": [
-            {
-                "jaar": 2022,
-                "type": "GR",
-                "resultaten": {
-                    "VVD": 91,
-                    "CDA": 73,
-                    "ChristenUnie": 33,
-                    "50PLUS": 30,
-                    "VoorBaarn": 162,
-                    "D66": 99,
-                    "PvdA": 100,
-                    "GroenLinks": 123
-                }
-            }
-        ]
-    },
-    "3742 CS": {
-        "stembureaus": [
-            "Stembureau Waldheim-mavo"
-        ],
-        "buurten": [
-            "Pekingpark"
-        ],
         "verkiezingen": [
             {
                 "jaar": 2018,
                 "type": "GR",
                 "resultaten": {
-                    "VVD": 272,
-                    "CDA": 113,
-                    "ChristenUnie-SGP": 28,
-                    "Baarnse Onafhankelijke Partij (BOP)": 78,
-                    "LTS (Lijst Tinus Snyders)": 13,
-                    "VoorBaarn": 131,
-                    "D66": 189,
-                    "PvdA": 48,
-                    "GroenLinks": 116
+                    "Baarnse Onafhankelijke Partij (BOP)": 134,
+                    "VVD": 181,
+                    "Democraten 66 (D66)": 161,
+                    "CDA": 161,
+                    "GROENLINKS": 118,
+                    "Partij van de Arbeid (P.v.d.A.)": 75,
+                    "LTS (Lijst Tinus Snyders)": 16,
+                    "ChristenUnie-SGP": 76,
+                    "VoorBaarn": 209
                 }
             }
         ]
@@ -390,233 +135,42 @@
         "stembureaus": [
             "Stembureau Basisschool De Uitkijck"
         ],
-        "buurten": [
-            "Oude-Oosterhei"
-        ],
         "verkiezingen": [
-            {
-                "jaar": 2015,
-                "type": "PS",
-                "resultaten": {
-                    "VVD": 130,
-                    "CDA": 116,
-                    "PVV (Partij voor de Vrijheid)": 59,
-                    "SP (Socialistische Partij)": 60,
-                    "ChristenUnie": 36,
-                    "Staatkundig Gereformeerde Partij (SGP)": 14,
-                    "50PLUS": 18,
-                    "Partij voor de Dieren": 44,
-                    "Libertarische Partij (LP)": 2,
-                    "D66": 156,
-                    "PvdA": 91,
-                    "GroenLinks": 53
-                }
-            },
-            {
-                "jaar": 2017,
-                "type": "TK",
-                "resultaten": {
-                    "VVD": 250,
-                    "CDA": 140,
-                    "PVV (Partij voor de Vrijheid)": 79,
-                    "SP (Socialistische Partij)": 51,
-                    "ChristenUnie": 76,
-                    "Staatkundig Gereformeerde Partij (SGP)": 13,
-                    "50PLUS": 37,
-                    "Partij voor de Dieren": 34,
-                    "VNL (VoorNederland)": 10,
-                    "DENK": 12,
-                    "Forum voor Democratie": 19,
-                    "Artikel 1": 2,
-                    "Niet Stemmers": 4,
-                    "D66": 105,
-                    "PvdA": 64,
-                    "GroenLinks": 136
-                }
-            },
             {
                 "jaar": 2018,
                 "type": "GR",
                 "resultaten": {
-                    "VVD": 170,
-                    "CDA": 112,
-                    "ChristenUnie-SGP": 67,
                     "Baarnse Onafhankelijke Partij (BOP)": 75,
+                    "VVD": 170,
+                    "Democraten 66 (D66)": 141,
+                    "CDA": 112,
+                    "GROENLINKS": 101,
+                    "Partij van de Arbeid (P.v.d.A.)": 76,
                     "LTS (Lijst Tinus Snyders)": 9,
-                    "VoorBaarn": 131,
-                    "D66": 141,
-                    "PvdA": 76,
-                    "GroenLinks": 101
-                }
-            },
-            {
-                "jaar": 2019,
-                "type": "PS",
-                "resultaten": {
-                    "VVD": 145,
-                    "CDA": 82,
-                    "PVV (Partij voor de Vrijheid)": 37,
-                    "SP (Socialistische Partij)": 39,
-                    "ChristenUnie": 60,
-                    "Staatkundig Gereformeerde Partij (SGP)": 10,
-                    "50PLUS": 42,
-                    "Partij voor de Dieren": 33,
-                    "DENK": 12,
-                    "Forum voor Democratie": 106,
-                    "U26 GEMEENTEN": 8,
-                    "D66": 92,
-                    "PvdA": 76,
-                    "GroenLinks": 136
+                    "ChristenUnie-SGP": 67,
+                    "VoorBaarn": 131
                 }
             }
         ]
     },
     "3742 RL": {
         "stembureaus": [
-            "Stembureau Gebouw \"De Pool\"",
             "Stembureau Gebouw De Pool"
         ],
-        "buurten": [
-            "Nieuwe-Oosterhei"
-        ],
         "verkiezingen": [
-            {
-                "jaar": 2014,
-                "type": "GR",
-                "resultaten": {
-                    "VVD": 61,
-                    "CDA": 56,
-                    "ChristenUnie-SGP": 47,
-                    "Baarnse Onafhankelijke Partij (BOP)": 125,
-                    "LTS (Lijst Tinus Snyders)": 75,
-                    "D66": 71,
-                    "PvdA": 115,
-                    "GroenLinks": 114
-                }
-            },
-            {
-                "jaar": 2015,
-                "type": "PS",
-                "resultaten": {
-                    "VVD": 58,
-                    "CDA": 50,
-                    "PVV (Partij voor de Vrijheid)": 113,
-                    "SP (Socialistische Partij)": 65,
-                    "ChristenUnie": 30,
-                    "Staatkundig Gereformeerde Partij (SGP)": 7,
-                    "50PLUS": 33,
-                    "Partij voor de Dieren": 27,
-                    "Vrijzinnige Partij": 3,
-                    "Libertarische Partij (LP)": 1,
-                    "JEZUS LEEFT": 2,
-                    "D66": 54,
-                    "PvdA": 47,
-                    "GroenLinks": 58
-                }
-            },
-            {
-                "jaar": 2017,
-                "type": "TK",
-                "resultaten": {
-                    "VVD": 150,
-                    "CDA": 94,
-                    "PVV (Partij voor de Vrijheid)": 99,
-                    "SP (Socialistische Partij)": 36,
-                    "ChristenUnie": 94,
-                    "Staatkundig Gereformeerde Partij (SGP)": 1,
-                    "50PLUS": 29,
-                    "Partij voor de Dieren": 46,
-                    "VNL (VoorNederland)": 2,
-                    "DENK": 55,
-                    "NIEUWE WEGEN": 1,
-                    "Forum voor Democratie": 15,
-                    "De Burger Beweging": 1,
-                    "GeenPeil": 1,
-                    "Piratenpartij": 5,
-                    "Artikel 1": 1,
-                    "Niet Stemmers": 2,
-                    "JEZUS LEEFT": 1,
-                    "MenS en Spirit / Basisinkomen Partij / V-R": 2,
-                    "D66": 83,
-                    "PvdA": 54,
-                    "GroenLinks": 88
-                }
-            },
             {
                 "jaar": 2018,
                 "type": "GR",
                 "resultaten": {
-                    "VVD": 59,
-                    "CDA": 58,
-                    "ChristenUnie-SGP": 52,
                     "Baarnse Onafhankelijke Partij (BOP)": 58,
+                    "VVD": 59,
+                    "Democraten 66 (D66)": 70,
+                    "CDA": 58,
+                    "GROENLINKS": 141,
+                    "Partij van de Arbeid (P.v.d.A.)": 36,
                     "LTS (Lijst Tinus Snyders)": 10,
-                    "VoorBaarn": 129,
-                    "D66": 70,
-                    "PvdA": 36,
-                    "GroenLinks": 141
-                }
-            },
-            {
-                "jaar": 2019,
-                "type": "PS",
-                "resultaten": {
-                    "VVD": 57,
-                    "CDA": 41,
-                    "PVV (Partij voor de Vrijheid)": 66,
-                    "SP (Socialistische Partij)": 67,
-                    "ChristenUnie": 33,
-                    "Staatkundig Gereformeerde Partij (SGP)": 6,
-                    "50PLUS": 46,
-                    "Partij voor de Dieren": 24,
-                    "DENK": 27,
-                    "Forum voor Democratie": 102,
-                    "U26 GEMEENTEN": 5,
-                    "D66": 57,
-                    "PvdA": 25,
-                    "GroenLinks": 40
-                }
-            },
-            {
-                "jaar": 2022,
-                "type": "GR",
-                "resultaten": {
-                    "VVD": 53,
-                    "CDA": 53,
-                    "ChristenUnie": 34,
-                    "50PLUS": 87,
-                    "VoorBaarn": 207,
-                    "D66": 45,
-                    "PvdA": 66,
-                    "GroenLinks": 117
-                }
-            },
-            {
-                "jaar": 2023,
-                "type": "TK",
-                "resultaten": {
-                    "VVD": 170,
-                    "CDA": 33,
-                    "PVV (Partij voor de Vrijheid)": 377,
-                    "SP (Socialistische Partij)": 50,
-                    "ChristenUnie": 31,
-                    "Staatkundig Gereformeerde Partij (SGP)": 10,
-                    "50PLUS": 25,
-                    "Partij voor de Dieren": 42,
-                    "DENK": 51,
-                    "Forum voor Democratie": 26,
-                    "Volt": 19,
-                    "JA21": 8,
-                    "BBB": 51,
-                    "BIJ1": 2,
-                    "Piratenpartij - De Groenen": 3,
-                    "BVNL / Groep Van Haga": 6,
-                    "Nieuw Sociaal Contract": 154,
-                    "Splinter": 3,
-                    "LP (Libertaire Partij)": 2,
-                    "Samen voor Nederland": 2,
-                    "D66": 81,
-                    "GroenLinks/PvdA": 222
+                    "ChristenUnie-SGP": 52,
+                    "VoorBaarn": 136
                 }
             }
         ]
@@ -625,127 +179,20 @@
         "stembureaus": [
             "Stembureau Gebouw Elan"
         ],
-        "buurten": [
-            "Oude-Oosterhei"
-        ],
         "verkiezingen": [
-            {
-                "jaar": 2015,
-                "type": "PS",
-                "resultaten": {
-                    "VVD": 151,
-                    "CDA": 68,
-                    "PVV (Partij voor de Vrijheid)": 102,
-                    "SP (Socialistische Partij)": 49,
-                    "ChristenUnie": 35,
-                    "Staatkundig Gereformeerde Partij (SGP)": 10,
-                    "50PLUS": 30,
-                    "Partij voor de Dieren": 26,
-                    "Vrijzinnige Partij": 2,
-                    "Libertarische Partij (LP)": 1,
-                    "JEZUS LEEFT": 1,
-                    "D66": 129,
-                    "PvdA": 35,
-                    "GroenLinks": 24
-                }
-            },
-            {
-                "jaar": 2017,
-                "type": "TK",
-                "resultaten": {
-                    "VVD": 268,
-                    "CDA": 109,
-                    "PVV (Partij voor de Vrijheid)": 60,
-                    "SP (Socialistische Partij)": 42,
-                    "ChristenUnie": 109,
-                    "Staatkundig Gereformeerde Partij (SGP)": 7,
-                    "50PLUS": 41,
-                    "Partij voor de Dieren": 33,
-                    "VNL (VoorNederland)": 3,
-                    "DENK": 8,
-                    "Forum voor Democratie": 7,
-                    "Piratenpartij": 4,
-                    "JEZUS LEEFT": 2,
-                    "D66": 108,
-                    "PvdA": 54,
-                    "GroenLinks": 169
-                }
-            },
             {
                 "jaar": 2018,
                 "type": "GR",
                 "resultaten": {
-                    "VVD": 120,
-                    "CDA": 63,
-                    "ChristenUnie-SGP": 49,
                     "Baarnse Onafhankelijke Partij (BOP)": 59,
+                    "VVD": 120,
+                    "Democraten 66 (D66)": 102,
+                    "CDA": 63,
+                    "GROENLINKS": 113,
+                    "Partij van de Arbeid (P.v.d.A.)": 45,
                     "LTS (Lijst Tinus Snyders)": 13,
-                    "VoorBaarn": 129,
-                    "D66": 102,
-                    "PvdA": 45,
-                    "GroenLinks": 113
-                }
-            },
-            {
-                "jaar": 2019,
-                "type": "PS",
-                "resultaten": {
-                    "VVD": 155,
-                    "CDA": 65,
-                    "PVV (Partij voor de Vrijheid)": 44,
-                    "SP (Socialistische Partij)": 28,
-                    "ChristenUnie": 49,
-                    "Staatkundig Gereformeerde Partij (SGP)": 10,
-                    "50PLUS": 27,
-                    "Partij voor de Dieren": 31,
-                    "DENK": 8,
-                    "Forum voor Democratie": 110,
-                    "U26 GEMEENTEN": 1,
-                    "D66": 76,
-                    "PvdA": 35,
-                    "GroenLinks": 113
-                }
-            },
-            {
-                "jaar": 2022,
-                "type": "GR",
-                "resultaten": {
-                    "VVD": 72,
-                    "CDA": 47,
-                    "ChristenUnie": 27,
-                    "50PLUS": 58,
-                    "VoorBaarn": 168,
-                    "D66": 69,
-                    "PvdA": 64,
-                    "GroenLinks": 106
-                }
-            },
-            {
-                "jaar": 2023,
-                "type": "TK",
-                "resultaten": {
-                    "VVD": 208,
-                    "CDA": 28,
-                    "PVV (Partij voor de Vrijheid)": 162,
-                    "SP (Socialistische Partij)": 32,
-                    "ChristenUnie": 37,
-                    "Staatkundig Gereformeerde Partij (SGP)": 8,
-                    "50PLUS": 6,
-                    "Partij voor de Dieren": 27,
-                    "DENK": 4,
-                    "Forum voor Democratie": 9,
-                    "Volt": 14,
-                    "JA21": 6,
-                    "BBB": 19,
-                    "BIJ1": 3,
-                    "BVNL / Groep Van Haga": 3,
-                    "Nieuw Sociaal Contract": 109,
-                    "Splinter": 6,
-                    "LEF - Voor de Nieuwe Generatie": 2,
-                    "Samen voor Nederland": 1,
-                    "PartijvdSport": 1,
-                    "D66": 82,
-                    "GroenLinks/PvdA": 173
+                    "ChristenUnie-SGP": 49,
+                    "VoorBaarn": 101
                 }
             }
         ]
@@ -754,76 +201,20 @@
         "stembureaus": [
             "Stembureau Guido de Bresschool ing Maatkampweg"
         ],
-        "buurten": [
-            "Nieuwe-Oosterhei"
-        ],
         "verkiezingen": [
-            {
-                "jaar": 2014,
-                "type": "GR",
-                "resultaten": {
-                    "VVD": 85,
-                    "CDA": 84,
-                    "ChristenUnie-SGP": 68,
-                    "Baarnse Onafhankelijke Partij (BOP)": 125,
-                    "LTS (Lijst Tinus Snyders)": 78,
-                    "D66": 104,
-                    "PvdA": 90,
-                    "GroenLinks": 78
-                }
-            },
-            {
-                "jaar": 2015,
-                "type": "PS",
-                "resultaten": {
-                    "VVD": 93,
-                    "CDA": 78,
-                    "PVV (Partij voor de Vrijheid)": 53,
-                    "SP (Socialistische Partij)": 78,
-                    "ChristenUnie": 48,
-                    "Staatkundig Gereformeerde Partij (SGP)": 15,
-                    "50PLUS": 25,
-                    "Partij voor de Dieren": 33,
-                    "Vrijzinnige Partij": 1,
-                    "JEZUS LEEFT": 1,
-                    "D66": 95,
-                    "PvdA": 76,
-                    "GroenLinks": 49
-                }
-            },
             {
                 "jaar": 2018,
                 "type": "GR",
                 "resultaten": {
-                    "VVD": 115,
-                    "CDA": 93,
-                    "ChristenUnie-SGP": 69,
                     "Baarnse Onafhankelijke Partij (BOP)": 73,
+                    "VVD": 115,
+                    "Democraten 66 (D66)": 87,
+                    "CDA": 93,
+                    "GROENLINKS": 96,
+                    "Partij van de Arbeid (P.v.d.A.)": 66,
                     "LTS (Lijst Tinus Snyders)": 9,
-                    "VoorBaarn": 152,
-                    "D66": 87,
-                    "PvdA": 66,
-                    "GroenLinks": 96
-                }
-            },
-            {
-                "jaar": 2019,
-                "type": "PS",
-                "resultaten": {
-                    "VVD": 113,
-                    "CDA": 68,
-                    "PVV (Partij voor de Vrijheid)": 49,
-                    "SP (Socialistische Partij)": 108,
-                    "ChristenUnie": 40,
-                    "Staatkundig Gereformeerde Partij (SGP)": 11,
-                    "50PLUS": 52,
-                    "Partij voor de Dieren": 41,
-                    "DENK": 8,
-                    "Forum voor Democratie": 127,
-                    "U26 GEMEENTEN": 7,
-                    "D66": 78,
-                    "PvdA": 48,
-                    "GroenLinks": 34
+                    "ChristenUnie-SGP": 69,
+                    "VoorBaarn": 152
                 }
             }
         ]
@@ -832,118 +223,20 @@
         "stembureaus": [
             "Stembureau Maria Koningin Kerk"
         ],
-        "buurten": [
-            "Eemdal-Noord",
-            "Eemdal-Zuid"
-        ],
         "verkiezingen": [
-            {
-                "jaar": 2014,
-                "type": "GR",
-                "resultaten": {
-                    "VVD": 82,
-                    "CDA": 97,
-                    "ChristenUnie-SGP": 67,
-                    "Baarnse Onafhankelijke Partij (BOP)": 177,
-                    "LTS (Lijst Tinus Snyders)": 62,
-                    "D66": 133,
-                    "PvdA": 87,
-                    "GroenLinks": 74
-                }
-            },
-            {
-                "jaar": 2015,
-                "type": "PS",
-                "resultaten": {
-                    "VVD": 109,
-                    "CDA": 73,
-                    "PVV (Partij voor de Vrijheid)": 70,
-                    "SP (Socialistische Partij)": 64,
-                    "ChristenUnie": 29,
-                    "Staatkundig Gereformeerde Partij (SGP)": 12,
-                    "50PLUS": 30,
-                    "Partij voor de Dieren": 35,
-                    "JEZUS LEEFT": 1,
-                    "D66": 107,
-                    "PvdA": 73,
-                    "GroenLinks": 51
-                }
-            },
             {
                 "jaar": 2018,
                 "type": "GR",
                 "resultaten": {
-                    "VVD": 88,
-                    "CDA": 112,
-                    "ChristenUnie-SGP": 57,
                     "Baarnse Onafhankelijke Partij (BOP)": 99,
+                    "VVD": 88,
+                    "Democraten 66 (D66)": 81,
+                    "CDA": 112,
+                    "GROENLINKS": 129,
+                    "Partij van de Arbeid (P.v.d.A.)": 64,
                     "LTS (Lijst Tinus Snyders)": 8,
-                    "VoorBaarn": 129,
-                    "D66": 81,
-                    "PvdA": 64,
-                    "GroenLinks": 129
-                }
-            },
-            {
-                "jaar": 2019,
-                "type": "PS",
-                "resultaten": {
-                    "VVD": 87,
-                    "CDA": 56,
-                    "PVV (Partij voor de Vrijheid)": 38,
-                    "SP (Socialistische Partij)": 107,
-                    "ChristenUnie": 58,
-                    "Staatkundig Gereformeerde Partij (SGP)": 6,
-                    "50PLUS": 42,
-                    "Partij voor de Dieren": 39,
-                    "DENK": 2,
-                    "Forum voor Democratie": 119,
-                    "U26 GEMEENTEN": 2,
-                    "D66": 83,
-                    "PvdA": 40,
-                    "GroenLinks": 49
-                }
-            },
-            {
-                "jaar": 2022,
-                "type": "GR",
-                "resultaten": {
-                    "VVD": 70,
-                    "CDA": 99,
-                    "ChristenUnie": 44,
-                    "50PLUS": 92,
-                    "VoorBaarn": 265,
-                    "D66": 59,
-                    "PvdA": 124,
-                    "GroenLinks": 156
-                }
-            },
-            {
-                "jaar": 2023,
-                "type": "TK",
-                "resultaten": {
-                    "VVD": 250,
-                    "CDA": 51,
-                    "PVV (Partij voor de Vrijheid)": 323,
-                    "SP (Socialistische Partij)": 76,
-                    "ChristenUnie": 49,
-                    "Staatkundig Gereformeerde Partij (SGP)": 8,
-                    "50PLUS": 22,
-                    "Partij voor de Dieren": 39,
-                    "DENK": 10,
-                    "Forum voor Democratie": 27,
-                    "Volt": 30,
-                    "JA21": 18,
-                    "BBB": 36,
-                    "BIJ1": 11,
-                    "Piratenpartij - De Groenen": 1,
-                    "BVNL / Groep Van Haga": 18,
-                    "Nieuw Sociaal Contract": 224,
-                    "Splinter": 3,
-                    "LP (Libertaire Partij)": 1,
-                    "Samen voor Nederland": 2,
-                    "D66": 103,
-                    "GroenLinks/PvdA": 369
+                    "ChristenUnie-SGP": 57,
+                    "VoorBaarn": 129
                 }
             }
         ]
@@ -952,463 +245,108 @@
         "stembureaus": [
             "Stembureau Berg en Dal (Apostolisch Genootschap)"
         ],
-        "buurten": [
-            "Componistenwijk",
-            "Transvaal",
-            "Wilhelminapark"
-        ],
         "verkiezingen": [
             {
                 "jaar": 2018,
                 "type": "GR",
                 "resultaten": {
-                    "VVD": 181,
-                    "CDA": 76,
-                    "ChristenUnie-SGP": 28,
                     "Baarnse Onafhankelijke Partij (BOP)": 43,
+                    "VVD": 181,
+                    "Democraten 66 (D66)": 139,
+                    "CDA": 76,
+                    "GROENLINKS": 90,
+                    "Partij van de Arbeid (P.v.d.A.)": 32,
                     "LTS (Lijst Tinus Snyders)": 4,
-                    "VoorBaarn": 73,
-                    "D66": 139,
-                    "PvdA": 32,
-                    "GroenLinks": 90
-                }
-            },
-            {
-                "jaar": 2022,
-                "type": "GR",
-                "resultaten": {
-                    "VVD": 102,
-                    "CDA": 69,
-                    "ChristenUnie": 27,
-                    "50PLUS": 27,
-                    "VoorBaarn": 84,
-                    "D66": 87,
-                    "PvdA": 30,
-                    "GroenLinks": 74
+                    "ChristenUnie-SGP": 28,
+                    "VoorBaarn": 73
                 }
             }
         ]
     },
     "3743 BA": {
         "stembureaus": [
-            "Stembureau Gemeentehuis Baarn ing Laanstraat 1",
-            "Stembureau Gemeentehuis Baarn",
-            "Stembureau Gemeentehuis Baarn (maandag)",
-            "Stembureau Gemeentehuis Baarn (dinsdag)"
-        ],
-        "buurten": [
-            "Centrum",
-            "Pekingpark"
+            "Stembureau Gemeentehuis Baarn ing Laanstraat 1"
         ],
         "verkiezingen": [
-            {
-                "jaar": 2014,
-                "type": "GR",
-                "resultaten": {
-                    "VVD": 256,
-                    "CDA": 180,
-                    "ChristenUnie-SGP": 68,
-                    "Baarnse Onafhankelijke Partij (BOP)": 218,
-                    "LTS (Lijst Tinus Snyders)": 83,
-                    "D66": 232,
-                    "PvdA": 88,
-                    "GroenLinks": 131
-                }
-            },
             {
                 "jaar": 2018,
                 "type": "GR",
                 "resultaten": {
-                    "VVD": 376,
-                    "CDA": 191,
-                    "ChristenUnie-SGP": 68,
                     "Baarnse Onafhankelijke Partij (BOP)": 102,
+                    "VVD": 376,
+                    "Democraten 66 (D66)": 228,
+                    "CDA": 191,
+                    "GROENLINKS": 163,
+                    "Partij van de Arbeid (P.v.d.A.)": 84,
                     "LTS (Lijst Tinus Snyders)": 22,
-                    "VoorBaarn": 139,
-                    "D66": 228,
-                    "PvdA": 84,
-                    "GroenLinks": 163
-                }
-            },
-            {
-                "jaar": 2022,
-                "type": "GR",
-                "resultaten": {
-                    "VVD": 480,
-                    "CDA": 277,
-                    "ChristenUnie": 114,
-                    "50PLUS": 216,
-                    "VoorBaarn": 730,
-                    "D66": 372,
-                    "PvdA": 270,
-                    "GroenLinks": 395
+                    "ChristenUnie-SGP": 68,
+                    "VoorBaarn": 139
                 }
             }
         ]
     },
-    "3743 CL": {
+    "3743 KN": {
         "stembureaus": [
             "Stembureau Gebouw Brandpunt"
         ],
-        "buurten": [
-            "Pekingpark"
-        ],
-        "verkiezingen": [
-            {
-                "jaar": 2014,
-                "type": "GR",
-                "resultaten": {
-                    "VVD": 212,
-                    "CDA": 100,
-                    "ChristenUnie-SGP": 25,
-                    "Baarnse Onafhankelijke Partij (BOP)": 102,
-                    "LTS (Lijst Tinus Snyders)": 17,
-                    "D66": 178,
-                    "PvdA": 65,
-                    "GroenLinks": 90
-                }
-            },
-            {
-                "jaar": 2015,
-                "type": "PS",
-                "resultaten": {
-                    "VVD": 272,
-                    "CDA": 115,
-                    "PVV (Partij voor de Vrijheid)": 69,
-                    "SP (Socialistische Partij)": 42,
-                    "ChristenUnie": 28,
-                    "Staatkundig Gereformeerde Partij (SGP)": 11,
-                    "50PLUS": 29,
-                    "Partij voor de Dieren": 47,
-                    "Vrijzinnige Partij": 1,
-                    "Libertarische Partij (LP)": 2,
-                    "Provincie@Inwonersbelangen": 1,
-                    "D66": 184,
-                    "PvdA": 64,
-                    "GroenLinks": 81
-                }
-            },
-            {
-                "jaar": 2017,
-                "type": "TK",
-                "resultaten": {
-                    "VVD": 470,
-                    "CDA": 149,
-                    "PVV (Partij voor de Vrijheid)": 75,
-                    "SP (Socialistische Partij)": 43,
-                    "ChristenUnie": 44,
-                    "Staatkundig Gereformeerde Partij (SGP)": 11,
-                    "50PLUS": 41,
-                    "Partij voor de Dieren": 56,
-                    "VNL (VoorNederland)": 5,
-                    "DENK": 3,
-                    "Forum voor Democratie": 26,
-                    "Piratenpartij": 2,
-                    "Artikel 1": 1,
-                    "D66": 262,
-                    "PvdA": 71,
-                    "GroenLinks": 166
-                }
-            },
-            {
-                "jaar": 2019,
-                "type": "PS",
-                "resultaten": {
-                    "VVD": 306,
-                    "CDA": 106,
-                    "PVV (Partij voor de Vrijheid)": 43,
-                    "SP (Socialistische Partij)": 26,
-                    "ChristenUnie": 44,
-                    "Staatkundig Gereformeerde Partij (SGP)": 12,
-                    "50PLUS": 39,
-                    "Partij voor de Dieren": 55,
-                    "DENK": 1,
-                    "Forum voor Democratie": 188,
-                    "U26 GEMEENTEN": 10,
-                    "D66": 181,
-                    "PvdA": 60,
-                    "GroenLinks": 170
-                }
-            }
-        ]
-    },
-    "3743 EN": {
-        "stembureaus": [
-            "Stembureau Gemeentehuis Baarn (Stationsweg)"
-        ],
-        "buurten": [
-            "Centrum",
-            "Pekingpark"
-        ],
-        "verkiezingen": [
-            {
-                "jaar": 2023,
-                "type": "TK",
-                "resultaten": {
-                    "VVD": 298,
-                    "CDA": 60,
-                    "PVV (Partij voor de Vrijheid)": 187,
-                    "SP (Socialistische Partij)": 15,
-                    "ChristenUnie": 39,
-                    "Staatkundig Gereformeerde Partij (SGP)": 10,
-                    "50PLUS": 9,
-                    "Partij voor de Dieren": 33,
-                    "DENK": 31,
-                    "Forum voor Democratie": 9,
-                    "Volt": 31,
-                    "JA21": 11,
-                    "BBB": 35,
-                    "BIJ1": 1,
-                    "Piratenpartij - De Groenen": 1,
-                    "BVNL / Groep Van Haga": 6,
-                    "Nieuw Sociaal Contract": 148,
-                    "Splinter": 3,
-                    "LEF - Voor de Nieuwe Generatie": 1,
-                    "Samen voor Nederland": 3,
-                    "PartijvdSport": 1,
-                    "Politieke Partij voor Basisinkomen": 1,
-                    "D66": 125,
-                    "GroenLinks/PvdA": 255
-                }
-            }
-        ]
-    },
-    "3743 GD": {
-        "stembureaus": [
-            "Stembureau De Leuning"
-        ],
-        "buurten": [
-            "Centrum"
-        ],
         "verkiezingen": [
             {
                 "jaar": 2018,
                 "type": "GR",
                 "resultaten": {
-                    "VVD": 100,
-                    "CDA": 82,
-                    "ChristenUnie-SGP": 44,
-                    "Baarnse Onafhankelijke Partij (BOP)": 80,
-                    "LTS (Lijst Tinus Snyders)": 10,
-                    "VoorBaarn": 139,
-                    "D66": 92,
-                    "PvdA": 63,
-                    "GroenLinks": 101
+                    "Baarnse Onafhankelijke Partij (BOP)": 82,
+                    "VVD": 269,
+                    "Democraten 66 (D66)": 133,
+                    "CDA": 99,
+                    "GROENLINKS": 79,
+                    "Partij van de Arbeid (P.v.d.A.)": 28,
+                    "LTS (Lijst Tinus Snyders)": 15,
+                    "ChristenUnie-SGP": 33,
+                    "VoorBaarn": 53
                 }
             }
         ]
     },
     "3743 KM": {
         "stembureaus": [
-            "Stembureau NS station",
-            "Stembureau NS station (pleinzijde)",
-            "Stembureau NS Station (spoorzijde)",
-            "Stembureau NS station (maandag)",
-            "Stembureau NS station (dinsdag)"
-        ],
-        "buurten": [
-            "Amaliapark",
-            "Pr. Hendrikpark"
+            "Stembureau NS station"
         ],
         "verkiezingen": [
             {
-                "jaar": 2017,
-                "type": "TK",
-                "resultaten": {
-                    "VVD": 572,
-                    "CDA": 122,
-                    "PVV (Partij voor de Vrijheid)": 40,
-                    "SP (Socialistische Partij)": 60,
-                    "ChristenUnie": 122,
-                    "Staatkundig Gereformeerde Partij (SGP)": 16,
-                    "50PLUS": 33,
-                    "Partij voor de Dieren": 18,
-                    "VNL (VoorNederland)": 1,
-                    "DENK": 9,
-                    "Forum voor Democratie": 17,
-                    "GeenPeil": 1,
-                    "Piratenpartij": 2,
-                    "Niet Stemmers": 1,
-                    "D66": 186,
-                    "PvdA": 66,
-                    "GroenLinks": 295
-                }
-            },
-            {
-                "jaar": 2022,
+                "jaar": 2018,
                 "type": "GR",
                 "resultaten": {
-                    "VVD": 643,
-                    "CDA": 241,
-                    "ChristenUnie": 80,
-                    "50PLUS": 124,
-                    "VoorBaarn": 522,
-                    "D66": 364,
-                    "PvdA": 246,
-                    "GroenLinks": 377
-                }
-            },
-            {
-                "jaar": 2023,
-                "type": "TK",
-                "resultaten": {
-                    "VVD": 832,
-                    "CDA": 105,
-                    "PVV (Partij voor de Vrijheid)": 344,
-                    "SP (Socialistische Partij)": 37,
-                    "ChristenUnie": 78,
-                    "Staatkundig Gereformeerde Partij (SGP)": 15,
-                    "50PLUS": 24,
-                    "Partij voor de Dieren": 69,
-                    "DENK": 15,
-                    "Forum voor Democratie": 17,
-                    "Volt": 45,
-                    "JA21": 17,
-                    "BBB": 44,
-                    "BIJ1": 2,
-                    "Piratenpartij - De Groenen": 1,
-                    "BVNL / Groep Van Haga": 12,
-                    "Nieuw Sociaal Contract": 250,
-                    "Splinter": 7,
-                    "LP (Libertaire Partij)": 1,
-                    "LEF - Voor de Nieuwe Generatie": 2,
-                    "Samen voor Nederland": 1,
-                    "D66": 321,
-                    "GroenLinks/PvdA": 444
-                }
-            }
-        ]
-    },
-    "3744 PA": {
-        "stembureaus": [
-            "Stembureau Amerpoort (bijzonder stemlokaal)"
-        ],
-        "buurten": [
-            "Amerpoort Sherpa"
-        ],
-        "verkiezingen": [
-            {
-                "jaar": 2022,
-                "type": "GR",
-                "resultaten": {
-                    "VVD": 4,
-                    "CDA": 3,
-                    "ChristenUnie": 4,
-                    "50PLUS": 2,
-                    "VoorBaarn": 6,
-                    "D66": 3,
-                    "PvdA": 6,
-                    "GroenLinks": 5
+                    "Baarnse Onafhankelijke Partij (BOP)": 82,
+                    "VVD": 419,
+                    "Democraten 66 (D66)": 164,
+                    "CDA": 159,
+                    "GROENLINKS": 119,
+                    "Partij van de Arbeid (P.v.d.A.)": 65,
+                    "LTS (Lijst Tinus Snyders)": 17,
+                    "ChristenUnie-SGP": 67,
+                    "VoorBaarn": 85
                 }
             }
         ]
     },
     "3749 AA": {
         "stembureaus": [
-            "Stembureau Dorpshuis \"de Furs\"",
             "Stembureau Dorpshuis de Furs"
         ],
-        "buurten": [
-            "Lage Vuursche",
-            "Verspreide huizen Baarn",
-            "Verspreide huizen Lage Vuursche"
-        ],
         "verkiezingen": [
-            {
-                "jaar": 2014,
-                "type": "GR",
-                "resultaten": {
-                    "VVD": 100,
-                    "CDA": 31,
-                    "ChristenUnie-SGP": 10,
-                    "Baarnse Onafhankelijke Partij (BOP)": 28,
-                    "LTS (Lijst Tinus Snyders)": 1,
-                    "D66": 32,
-                    "PvdA": 10,
-                    "GroenLinks": 10
-                }
-            },
-            {
-                "jaar": 2015,
-                "type": "PS",
-                "resultaten": {
-                    "VVD": 110,
-                    "CDA": 33,
-                    "PVV (Partij voor de Vrijheid)": 10,
-                    "SP (Socialistische Partij)": 6,
-                    "ChristenUnie": 11,
-                    "Staatkundig Gereformeerde Partij (SGP)": 1,
-                    "50PLUS": 6,
-                    "Partij voor de Dieren": 10,
-                    "D66": 36,
-                    "PvdA": 10,
-                    "GroenLinks": 12
-                }
-            },
-            {
-                "jaar": 2017,
-                "type": "TK",
-                "resultaten": {
-                    "VVD": 140,
-                    "CDA": 44,
-                    "PVV (Partij voor de Vrijheid)": 13,
-                    "SP (Socialistische Partij)": 4,
-                    "ChristenUnie": 13,
-                    "Staatkundig Gereformeerde Partij (SGP)": 2,
-                    "50PLUS": 7,
-                    "Partij voor de Dieren": 11,
-                    "VNL (VoorNederland)": 1,
-                    "Forum voor Democratie": 7,
-                    "D66": 55,
-                    "PvdA": 8,
-                    "GroenLinks": 24
-                }
-            },
             {
                 "jaar": 2018,
                 "type": "GR",
                 "resultaten": {
-                    "VVD": 84,
-                    "CDA": 30,
-                    "ChristenUnie-SGP": 13,
-                    "Baarnse Onafhankelijke Partij (BOP)": 19,
-                    "VoorBaarn": 32,
-                    "D66": 31,
-                    "PvdA": 4,
-                    "GroenLinks": 17
-                }
-            },
-            {
-                "jaar": 2019,
-                "type": "PS",
-                "resultaten": {
-                    "VVD": 103,
-                    "CDA": 22,
-                    "PVV (Partij voor de Vrijheid)": 7,
-                    "SP (Socialistische Partij)": 3,
-                    "ChristenUnie": 11,
-                    "Staatkundig Gereformeerde Partij (SGP)": 3,
-                    "50PLUS": 5,
-                    "Partij voor de Dieren": 10,
-                    "Forum voor Democratie": 58,
-                    "U26 GEMEENTEN": 1,
-                    "D66": 37,
-                    "PvdA": 5,
-                    "GroenLinks": 20
-                }
-            },
-            {
-                "jaar": 2022,
-                "type": "GR",
-                "resultaten": {
-                    "VVD": 40,
-                    "CDA": 20,
-                    "ChristenUnie": 11,
-                    "50PLUS": 19,
-                    "VoorBaarn": 49,
-                    "D66": 9,
-                    "PvdA": 22,
-                    "GroenLinks": 38
+                    "Baarnse Onafhankelijke Partij (BOP)": 13,
+                    "VVD": 49,
+                    "Democraten 66 (D66)": 16,
+                    "CDA": 15,
+                    "GROENLINKS": 45,
+                    "Partij van de Arbeid (P.v.d.A.)": 23,
+                    "LTS (Lijst Tinus Snyders)": 35,
+                    "ChristenUnie-SGP": 18,
+                    "VoorBaarn": 22
                 }
             }
         ]
