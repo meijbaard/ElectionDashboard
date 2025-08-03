@@ -3,6 +3,9 @@
         "stembureaus": [
             "Stembureau Verzorgingstehuis De Blinkert"
         ],
+        "buurten": [
+            "Professorenwijk"
+        ],
         "verkiezingen": [
             {
                 "jaar": 2018,
@@ -24,6 +27,9 @@
     "3741 GS": {
         "stembureaus": [
             "Stembureau Greenfields ingang A Chopinln"
+        ],
+        "buurten": [
+            "Componistenwijk"
         ],
         "verkiezingen": [
             {
@@ -47,6 +53,11 @@
         "stembureaus": [
             "Stembureau De Speeldoos"
         ],
+        "buurten": [
+            "Schilderswijk",
+            "Eemland waaronder Eembrugge",
+            "Eemdal-Noord"
+        ],
         "verkiezingen": [
             {
                 "jaar": 2018,
@@ -68,6 +79,9 @@
     "3741 VJ": {
         "stembureaus": [
             "Stembureau Woon- en zorgcentrum Santvoorde"
+        ],
+        "buurten": [
+            "Staatsliedenwijk"
         ],
         "verkiezingen": [
             {
@@ -91,6 +105,9 @@
         "stembureaus": [
             "Stembureau Brandweerkazerne"
         ],
+        "buurten": [
+            "Staatsliedenwijk"
+        ],
         "verkiezingen": [
             {
                 "jaar": 2018,
@@ -112,6 +129,9 @@
     "3742 AB": {
         "stembureaus": [
             "Stembureau Zorgcentrum Schoonoord"
+        ],
+        "buurten": [
+            "Schoonoordpark"
         ],
         "verkiezingen": [
             {
@@ -135,6 +155,9 @@
         "stembureaus": [
             "Stembureau Basisschool De Uitkijck"
         ],
+        "buurten": [
+            "Oude-Oosterhei"
+        ],
         "verkiezingen": [
             {
                 "jaar": 2018,
@@ -156,6 +179,9 @@
     "3742 RL": {
         "stembureaus": [
             "Stembureau Gebouw De Pool"
+        ],
+        "buurten": [
+            "Nieuwe-Oosterhei"
         ],
         "verkiezingen": [
             {
@@ -179,6 +205,9 @@
         "stembureaus": [
             "Stembureau Gebouw Elan"
         ],
+        "buurten": [
+            "Oude-Oosterhei"
+        ],
         "verkiezingen": [
             {
                 "jaar": 2018,
@@ -200,6 +229,9 @@
     "3742 TG": {
         "stembureaus": [
             "Stembureau Guido de Bresschool ing Maatkampweg"
+        ],
+        "buurten": [
+            "Nieuwe-Oosterhei"
         ],
         "verkiezingen": [
             {
@@ -223,6 +255,10 @@
         "stembureaus": [
             "Stembureau Maria Koningin Kerk"
         ],
+        "buurten": [
+            "Eemdal-Zuid",
+            "Eemdal-Noord"
+        ],
         "verkiezingen": [
             {
                 "jaar": 2018,
@@ -244,6 +280,11 @@
     "3743 AR": {
         "stembureaus": [
             "Stembureau Berg en Dal (Apostolisch Genootschap)"
+        ],
+        "buurten": [
+            "Componistenwijk",
+            "Transvaal",
+            "Wilhelminapark"
         ],
         "verkiezingen": [
             {
@@ -267,6 +308,10 @@
         "stembureaus": [
             "Stembureau Gemeentehuis Baarn ing Laanstraat 1"
         ],
+        "buurten": [
+            "Centrum",
+            "Pekingpark"
+        ],
         "verkiezingen": [
             {
                 "jaar": 2018,
@@ -288,6 +333,9 @@
     "3743 KN": {
         "stembureaus": [
             "Stembureau Gebouw Brandpunt"
+        ],
+        "buurten": [
+            "Pekingpark"
         ],
         "verkiezingen": [
             {
@@ -311,6 +359,10 @@
         "stembureaus": [
             "Stembureau NS station"
         ],
+        "buurten": [
+            "Amaliapark",
+            "Pr. Hendrikpark"
+        ],
         "verkiezingen": [
             {
                 "jaar": 2018,
@@ -332,6 +384,11 @@
     "3749 AA": {
         "stembureaus": [
             "Stembureau Dorpshuis de Furs"
+        ],
+        "buurten": [
+            "Lage Vuursche",
+            "Verspreide huizen Baarn",
+            "Verspreide huizen Lage Vuursche"
         ],
         "verkiezingen": [
             {
