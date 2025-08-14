@@ -215,7 +215,6 @@ permalink: /electiondashboard/
                 return obj;
             }, {});
 
-            // FIX 1: Normalize postcode from CSV (remove spaces) to match stembureau.json
             const zip = row.bureau_zip.replace(/\s/g, '');
             if (!zip) continue;
 
@@ -247,7 +246,6 @@ permalink: /electiondashboard/
             partyHeaders.forEach(party => {
                 const votes = parseInt(row[party]);
                 if (votes > 0) {
-                    // FIX 2: Standardize party names
                     const standardName = partyNameMapping[party] || party;
                     election.resultaten[standardName] = (election.resultaten[standardName] || 0) + votes;
                 }
@@ -535,7 +533,6 @@ permalink: /electiondashboard/
         }
     }
 
-    // FIX 3: Reverted to correct D'Hondt method implementation
     function calculateSeats(partyVotes, totalSeats) {
         const seats = {};
         Object.keys(partyVotes).forEach(p => { seats[p] = 0; });
@@ -661,26 +658,29 @@ permalink: /electiondashboard/
             analyseContent.innerHTML = '<p>Geen data voor deze verkiezing.</p>'; return;
         }
 
-        // Scenario A: Apart
+        // Scenario A: Apart (This is the actual result of the election)
         const seatsApart = calculateSeats(originalVotes, totalSeats);
-        const glSeats = seatsApart['GroenLinks'] || 0;
-        const pvdaSeats = seatsApart['PvdA'] || 0;
-        const totalApart = glSeats + pvdaSeats;
+        const glSeatsApart = seatsApart['GroenLinks'] || 0;
+        const pvdaSeatsApart = seatsApart['PvdA'] || 0;
+        const totalApart = glSeatsApart + pvdaSeatsApart;
 
         // Scenario B: Gezamenlijk
         const combinedVotes = { ...originalVotes };
-        const glVotes = combinedVotes['GroenLinks'] || 0;
-        const pvdaVotes = combinedVotes['PvdA'] || 0;
+        const glVotesToCombine = combinedVotes['GroenLinks'] || 0;
+        const pvdaVotesToCombine = combinedVotes['PvdA'] || 0;
         delete combinedVotes['GroenLinks'];
         delete combinedVotes['PvdA'];
-        combinedVotes['GROENLINKS / Partij van de Arbeid (PvdA)'] = glVotes + pvdaVotes;
+        combinedVotes['GROENLINKS / Partij van de Arbeid (PvdA)'] = glVotesToCombine + pvdaVotesToCombine;
         const seatsCombined = calculateSeats(combinedVotes, totalSeats);
         const totalCombined = seatsCombined['GROENLINKS / Partij van de Arbeid (PvdA)'] || 0;
 
         let html = '<div class="grid grid-cols-1 md:grid-cols-2 gap-8">';
+        // Render Scenario A table
         html += '<div><h3 class="font-semibold text-lg mb-2">Scenario A: Aparte Lijsten</h3><table class="analysis-table w-full text-sm text-left text-gray-500"><tbody>';
         Object.entries(seatsApart).filter(([,s])=>s>0).sort(([,a],[,b])=>b-a).forEach(([p,s]) => { html += `<tr class="bg-white border-b"><th scope="row" class="py-2 px-4 font-medium text-gray-900">${p}</th><td class="py-2 px-4">${s} zetel(s)</td></tr>`; });
         html += '</tbody></table></div>';
+        
+        // Render Scenario B table
         html += '<div><h3 class="font-semibold text-lg mb-2">Scenario B: Gezamenlijke Lijst</h3><table class="analysis-table w-full text-sm text-left text-gray-500"><tbody>';
         Object.entries(seatsCombined).filter(([,s])=>s>0).sort(([,a],[,b])=>b-a).forEach(([p,s]) => { html += `<tr class="bg-white border-b"><th scope="row" class="py-2 px-4 font-medium text-gray-900">${p}</th><td class="py-2 px-4">${s} zetel(s)</td></tr>`; });
         html += '</tbody></table></div></div>';
