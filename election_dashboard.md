@@ -1,7 +1,7 @@
 ---
-title: Election Dashboard
+title: Verkiezingsdashboard Baarn
 author_profile: false
-layout: Election
+layout: default
 permalink: /electiondashboard/
 ---
 
