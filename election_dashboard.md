@@ -11,14 +11,11 @@ permalink: /electiondashboard/
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verkiezingsdashboard Baarn</title>
     
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Leaflet CSS & JS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     
-    <!-- Inter Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -52,7 +49,6 @@ permalink: /electiondashboard/
             <p class="text-gray-600 mt-1">Analyse van verkiezingsuitslagen per buurt en zetelverdeling</p>
         </header>
 
-        <!-- Tab Navigation -->
         <div class="mb-6">
             <div class="border-b border-gray-200">
                 <nav class="-mb-px flex space-x-8" aria-label="Tabs">
@@ -63,7 +59,6 @@ permalink: /electiondashboard/
             </div>
         </div>
 
-        <!-- Filter Section -->
         <div class="bg-white p-6 rounded-lg shadow-md mb-6">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div id="main-filter-container">
@@ -81,7 +76,6 @@ permalink: /electiondashboard/
             </div>
         </div>
 
-        <!-- Tab Content -->
         <div id="kaart" class="tab-content">
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
                 <div class="lg:col-span-2">
@@ -113,8 +107,10 @@ permalink: /electiondashboard/
 
     <script>
         // --- DATA URLs ---
-        const ELECTION_DATA_URL = 'https://raw.githubusercontent.com/meijbaard/ElectionDashboard/main/verkiezingsuitslagen.json';
+        const ELECTION_DATA_URL = 'https://raw.githubusercontent.com/meijbaard/ElectionDashboard/main/totaal_stemuitslagen.csv';
         const GEOJSON_URL = 'https://raw.githubusercontent.com/meijbaard/LocalDashboard/main/baarn_buurten.geojson';
+        const STEMBUREAU_DATA_URL = 'https://raw.githubusercontent.com/meijbaard/ElectionDashboard/main/stembureau.json';
+
 
         // --- DOM ELEMENTS ---
         const electionSelect = document.getElementById('election-select');
@@ -158,6 +154,7 @@ permalink: /electiondashboard/
         };
         
         function getColor(partyName) {
+            if (!partyName) return partyColors['Default'];
             const matchedKey = Object.keys(partyColors).find(key => partyName.includes(key));
             return partyColors[matchedKey] || partyColors['Default'];
         }
@@ -183,44 +180,80 @@ permalink: /electiondashboard/
             return rgbToHex(r, g, b);
         }
 
-        // --- DATA CLEANING ---
-        function cleanElectionData(data) {
-            const cleanedData = JSON.parse(JSON.stringify(data)); // Deep copy
-            const partyNameMapping = {
-                'GROENLINKS': 'GroenLinks',
-                'Partij van de Arbeid (P.v.d.A.)': 'PvdA',
-                'Democraten 66 (D66)': 'D66'
-            };
+        // --- DATA PROCESSING ---
+        function convertCsvToElectionData(csvText, stembureauData) {
+            const lines = csvText.trim().split('\n');
+            const header = lines[0].split(',').map(h => h.trim());
+            const partyHeaders = header.slice(10); 
 
-            Object.values(cleanedData).forEach(location => {
-                location.verkiezingen.forEach(election => {
-                    const newResultaten = {};
-                    Object.entries(election.resultaten).forEach(([party, votes]) => {
-                        let standardName = party;
-                        for (const key in partyNameMapping) {
-                            if (party.includes(key)) {
-                                standardName = partyNameMapping[key];
-                                break;
-                            }
-                        }
-                        newResultaten[standardName] = (newResultaten[standardName] || 0) + votes;
-                    });
-                    election.resultaten = newResultaten;
-                });
+            const data = {};
+            const zipToBuurtMap = {};
+            stembureauData.forEach(s => {
+                if (!zipToBuurtMap[s.postcode]) {
+                    zipToBuurtMap[s.postcode] = new Set();
+                }
+                zipToBuurtMap[s.postcode].add(s.buurt);
             });
-            return cleanedData;
-        }
 
+            for (let i = 1; i < lines.length; i++) {
+                const values = lines[i].split(',');
+                const row = header.reduce((obj, key, index) => {
+                    obj[key] = values[index] ? values[index].trim() : '';
+                    return obj;
+                }, {});
+
+                const zip = row.bureau_zip;
+                if (!zip) continue;
+
+                if (!data[zip]) {
+                    data[zip] = {
+                        stembureaus: new Set(),
+                        buurten: zipToBuurtMap[zip] ? Array.from(zipToBuurtMap[zip]) : [],
+                        verkiezingen: []
+                    };
+                }
+                data[zip].stembureaus.add(row.bureau_label);
+
+                const electionParts = row.verkiezing.split('_');
+                if (electionParts.length < 2) continue;
+
+                const year = parseInt(electionParts[0]);
+                const type = electionParts[1].toUpperCase();
+
+                let election = data[zip].verkiezingen.find(v => v.jaar === year && v.type === type);
+                if (!election) {
+                    election = {
+                        jaar: year,
+                        type: type,
+                        resultaten: {}
+                    };
+                    data[zip].verkiezingen.push(election);
+                }
+
+                partyHeaders.forEach(party => {
+                    const votes = parseInt(row[party]);
+                    if (votes > 0) {
+                        election.resultaten[party] = (election.resultaten[party] || 0) + votes;
+                    }
+                });
+            }
+
+            for (const zip in data) {
+                data[zip].stembureaus = Array.from(data[zip].stembureaus);
+            }
+            return data;
+        }
 
         // --- INITIALIZATION ---
         async function initializeDashboard() {
             try {
-                const [elections, geojson] = await Promise.all([
-                    fetch(ELECTION_DATA_URL).then(res => res.json()),
-                    fetch(GEOJSON_URL).then(res => res.json())
+                const [csvText, geojson, stembureauData] = await Promise.all([
+                    fetch(ELECTION_DATA_URL).then(res => res.text()),
+                    fetch(GEOJSON_URL).then(res => res.json()),
+                    fetch(STEMBUREAU_DATA_URL).then(res => res.json())
                 ]);
                 
-                electionData = cleanElectionData(elections); // Clean data on load
+                electionData = convertCsvToElectionData(csvText, stembureauData);
                 geojsonData = geojson;
                 
                 calculateAverageLocalVoteShare();
@@ -295,7 +328,12 @@ permalink: /electiondashboard/
                 loc.verkiezingen.forEach(v => uniqueElections.add(`${v.type} ${v.jaar}`));
             });
             
-            const sortedElections = Array.from(uniqueElections).sort((a, b) => b.split(' ')[1] - a.split(' ')[1]);
+            const sortedElections = Array.from(uniqueElections).sort((a, b) => {
+                const [typeA, yearA] = a.split(' ');
+                const [typeB, yearB] = b.split(' ');
+                return yearB - yearA || typeA.localeCompare(typeB);
+            });
+
             sortedElections.forEach(e => {
                 const option = document.createElement('option');
                 option.value = e;
@@ -332,11 +370,10 @@ permalink: /electiondashboard/
             const [type, year] = selectedElection.split(' ');
             const parties = new Set();
             Object.values(electionData).forEach(loc => {
-                loc.verkiezingen.forEach(v => {
-                    if (v.type === type && v.jaar == year) {
-                        Object.keys(v.resultaten).forEach(p => parties.add(p));
-                    }
-                });
+                const election = loc.verkiezingen.find(v => v.type === type && v.jaar == year);
+                if (election) {
+                    Object.keys(election.resultaten).forEach(p => parties.add(p));
+                }
             });
 
             partySelect.innerHTML = '<option value="overall">Toon winnaar per buurt</option>';
@@ -348,7 +385,7 @@ permalink: /electiondashboard/
             });
         }
 
-        // --- DATA PROCESSING & UPDATES ---
+        // --- DASHBOARD UPDATES ---
         function updateDashboard() {
             if (activeTab === 'kaart') {
                 updateMap();
@@ -361,13 +398,15 @@ permalink: /electiondashboard/
                 updatePartyFilter();
             }
         }
-
+        
         function getResultsForSelection(electionString, groupBy = 'gemeente') {
             const [type, year] = electionString.split(' ');
             const results = {};
 
             if (groupBy === 'buurt') {
-                geojsonData.features.forEach(f => { results[f.properties.buurtnaam] = { total: 0, parties: {} }; });
+                geojsonData.features.forEach(f => {
+                    results[f.properties.buurtnaam] = { total: 0, parties: {} };
+                });
             } else { // 'gemeente'
                 results['gemeente'] = { total: 0, parties: {} };
             }
@@ -482,9 +521,19 @@ permalink: /electiondashboard/
 
         function calculateSeats(partyVotes, totalSeats) {
             const seats = {};
-            Object.keys(partyVotes).forEach(p => { seats[p] = 0; });
+            const parties = Object.keys(partyVotes);
+            parties.forEach(p => { seats[p] = 0; });
+            const kiesdeler = Object.values(partyVotes).reduce((a,b) => a+b, 0) / totalSeats;
+            
+            parties.forEach(p => {
+                if(partyVotes[p] >= kiesdeler){
+                    seats[p] = Math.floor(partyVotes[p]/kiesdeler)
+                }
+            });
 
-            for (let i = 0; i < totalSeats; i++) {
+            let remainingSeats = totalSeats - Object.values(seats).reduce((a, b) => a+b, 0);
+
+            while(remainingSeats > 0){
                 let maxQuotient = -1;
                 let winningParty = null;
                 for (const party in partyVotes) {
@@ -496,8 +545,12 @@ permalink: /electiondashboard/
                 }
                 if (winningParty) {
                     seats[winningParty]++;
+                    remainingSeats--
+                } else {
+                    break;
                 }
             }
+
             return seats;
         }
 
@@ -603,16 +656,18 @@ permalink: /electiondashboard/
 
             // Scenario A: Apart
             const seatsApart = calculateSeats(originalVotes, totalSeats);
-            const glSeats = seatsApart['GroenLinks'] || 0;
-            const pvdaSeats = seatsApart['PvdA'] || 0;
+            const glSeats = seatsApart['GroenLinks'] || seatsApart['GROENLINKS'] || 0;
+            const pvdaSeats = seatsApart['PvdA'] || seatsApart['Partij van de Arbeid (P.v.d.A.)'] || 0;
             const totalApart = glSeats + pvdaSeats;
 
             // Scenario B: Gezamenlijk
             const combinedVotes = { ...originalVotes };
-            const glVotes = combinedVotes['GroenLinks'] || 0;
-            const pvdaVotes = combinedVotes['PvdA'] || 0;
+            const glVotes = combinedVotes['GroenLinks'] || combinedVotes['GROENLINKS'] || 0;
+            const pvdaVotes = combinedVotes['PvdA'] || combinedVotes['Partij van de Arbeid (P.v.d.A.)'] || 0;
             delete combinedVotes['GroenLinks'];
+            delete combinedVotes['GROENLINKS'];
             delete combinedVotes['PvdA'];
+            delete combinedVotes['Partij van de Arbeid (P.v.d.A.)'];
             combinedVotes['GROENLINKS / Partij van de Arbeid (PvdA)'] = glVotes + pvdaVotes;
             const seatsCombined = calculateSeats(combinedVotes, totalSeats);
             const totalCombined = seatsCombined['GROENLINKS / Partij van de Arbeid (PvdA)'] || 0;
@@ -644,7 +699,7 @@ permalink: /electiondashboard/
             const tk2023Results = getResultsForSelection('TK 2023');
             
             const tk2017_gl = tk2017Results.parties['GroenLinks'] || 0;
-            const tk2017_pvda = tk2017Results.parties['PvdA'] || 0;
+            const tk2017_pvda = tk2017Results.parties['PvdA'] || tk2017Results.parties['Partij van de Arbeid (P.v.d.A.)'] || 0;
             const tk2017_total = tk2017_gl + tk2017_pvda;
             const tk2023_combined = tk2023Results.parties['GROENLINKS / Partij van de Arbeid (PvdA)'] || 0;
             const synergyFactor = tk2017_total > 0 ? tk2023_combined / tk2017_total : 1;
@@ -655,11 +710,11 @@ permalink: /electiondashboard/
 
             // 3. Apply synergy and create predicted votes
             const predictedVotes = {};
-            const glVotes = gr2022Votes['GroenLinks'] || 0;
-            const pvdaVotes = gr2022Votes['PvdA'] || 0;
+            const glVotes = gr2022Votes['GroenLinks'] || gr2022Votes['GROENLINKS'] || 0;
+            const pvdaVotes = gr2022Votes['PvdA'] || gr2022Votes['Partij van de Arbeid (P.v.d.A.)'] || 0;
             
             Object.entries(gr2022Votes).forEach(([party, votes]) => {
-                if (party !== 'GroenLinks' && party !== 'PvdA') {
+                if (party !== 'GroenLinks' && party !== 'PvdA' && party !== 'GROENLINKS' && party !== 'Partij van de Arbeid (P.v.d.A.)') {
                     predictedVotes[party] = votes;
                 }
             });
