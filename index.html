@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>ElectionDashboard</title>
+  <meta name="description" content="Live verkiezingsdashboard met kaarten en grafieken." />
+
+  <!-- Content Security Policy (pas aan als je andere CDNs / bronnen gebruikt) -->
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src  'self' https://unpkg.com https://cdn.jsdelivr.net;
+    style-src   'self' 'unsafe-inline' https://unpkg.com https://fonts.googleapis.com;
+    font-src    'self' https://fonts.gstatic.com;
+    img-src     'self' data: https://*.tile.openstreetmap.org;
+    connect-src 'self' https://raw.githubusercontent.com;
+    upgrade-insecure-requests;
+  ">
+
+  <!-- Leaflet (kaart) -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+
+  <!-- Chart.js (grafieken) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
+
+  <!-- Jouw stylesheet -->
+  <link rel="stylesheet" href="assets/css/electiondashboard.css" />
+</head>
+<body>
+  <noscript>Dit dashboard heeft JavaScript nodig om te werken.</noscript>
+
+  <header class="ed-header">
+    <div class="ed-container">
+      <h1 class="ed-title">ElectionDashboard</h1>
+      <p class="ed-subtitle">Live inzichten, kaarten en trends</p>
+    </div>
+  </header>
+
+  <main id="app" class="ed-container">
+    <!-- FILTERS / BESTURING -->
+    <section class="ed-card ed-filters" aria-labelledby="filters-heading">
+      <h2 id="filters-heading" class="ed-h2">Filters</h2>
+      <div class="ed-filters-grid">
+        <div class="ed-field">
+          <label for="electionSelect" class="ed-label">Verkiezing</label>
+          <select id="electionSelect" class="ed-select">
+            <!-- JS vult opties -->
+          </select>
+        </div>
+        <div class="ed-field">
+          <label for="regionSelect" class="ed-label">Regio / Gemeente</label>
+          <select id="regionSelect" class="ed-select">
+            <!-- JS vult opties -->
+          </select>
+        </div>
+        <div class="ed-field">
+          <label for="partySelect" class="ed-label">Partij</label>
+          <select id="partySelect" class="ed-select">
+            <!-- JS vult opties -->
+          </select>
+        </div>
+        <div class="ed-actions">
+          <button id="resetFiltersBtn" class="ed-button" type="button">Reset filters</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- KPI / SAMENVATTING -->
+    <section class="ed-kpis" aria-label="Samenvatting">
+      <div class="ed-kpi">
+        <div class="ed-kpi-label">Opkomst</div>
+        <div id="kpi-turnout" class="ed-kpi-value">—</div>
+      </div>
+      <div class="ed-kpi">
+        <div class="ed-kpi-label">Grootste partij</div>
+        <div id="kpi-top-party" class="ed-kpi-value">—</div>
+      </div>
+      <div class="ed-kpi">
+        <div class="ed-kpi-label">Peildatum</div>
+        <div id="kpi-date" class="ed-kpi-value">—</div>
+      </div>
+    </section>
+
+    <!-- TABS -->
+    <nav class="ed-tabs" aria-label="Navigatie tabbladen">
+      <button class="ed-tab active" data-tab="overview" type="button">Overzicht</button>
+      <button class="ed-tab" data-tab="map" type="button">Kaart</button>
+      <button class="ed-tab" data-tab="chart" type="button">Grafiek</button>
+      <button class="ed-tab" data-tab="table" type="button">Tabel</button>
+    </nav>
+
+    <!-- TAB: OVERVIEW -->
+    <section id="tab-overview" class="ed-tabpanel active" aria-labelledby="tab-overview-btn">
+      <div class="ed-grid-2">
+        <article class="ed-card">
+          <h2 class="ed-h2">Korte uitleg</h2>
+          <p>
+            Selecteer een verkiezing, regio en (optioneel) een partij om direct
+            samenvatting, kaart, grafieken en tabel te zien.
+          </p>
+          <ul class="ed-list">
+            <li>De <strong>kaart</strong> toont uitslagen per gebied.</li>
+            <li>De <strong>grafiek</strong> vergelijkt partijen of tijdreeksen.</li>
+            <li>De <strong>tabel</strong> geeft de ruwe cijfers.</li>
+          </ul>
+        </article>
+        <article class="ed-card">
+          <h2 class="ed-h2">Legenda</h2>
+          <div id="legend" class="ed-legend">
+            <!-- JS vult legenda (bijv. kleur → partij) -->
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- TAB: MAP -->
+    <section id="tab-map" class="ed-tabpanel" aria-labelledby="tab-map-btn">
+      <div class="ed-card">
+        <h2 class="ed-h2">Kaart</h2>
+        <!-- Belangrijk: veel code verwacht #map -->
+        <div id="map" class="ed-map" role="region" aria-label="Kaartweergave"></div>
+      </div>
+    </section>
+
+    <!-- TAB: CHART -->
+    <section id="tab-chart" class="ed-tabpanel" aria-labelledby="tab-chart-btn">
+      <div class="ed-card">
+        <h2 class="ed-h2">Grafiek</h2>
+        <!-- Chart.js canvas met verwacht id -->
+        <canvas id="resultChart" height="120" aria-label="Resultaten grafiek"></canvas>
+      </div>
+    </section>
+
+    <!-- TAB: TABLE -->
+    <section id="tab-table" class="ed-tabpanel" aria-labelledby="tab-table-btn">
+      <div class="ed-card">
+        <h2 class="ed-h2">Resultaten (tabel)</h2>
+        <div class="ed-table-wrap">
+          <table id="resultsTable" class="ed-table">
+            <thead>
+              <tr>
+                <th scope="col">Gebied</th>
+                <th scope="col">Partij</th>
+                <th scope="col">Stemmen</th>
+                <th scope="col">%</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- JS rendert rijen -->
+            </tbody>
+          </table>
+        </div>
+        <div id="tableNote" class="ed-note" hidden></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ed-footer">
+    <div class="ed-container">
+      <small>&copy; <span id="year"></span> Mark Eijbaard — ElectionDashboard</small>
+    </div>
+  </footer>
+
+  <!-- Jouw script (laatste, met defer) -->
+  <script src="assets/js/electiondashboard.js" defer></script>
+  <script defer>
+    // Kleine helper zonder inline event handlers
+    document.addEventListener('DOMContentLoaded', () => {
+      const y = document.getElementById('year');
+      if (y) y.textContent = new Date().getFullYear();
+
+      // Eenvoudige tab-logic (als je JS dit al doet, mag dit weg)
+      const tabs = document.querySelectorAll('.ed-tab');
+      const panels = document.querySelectorAll('.ed-tabpanel');
+      tabs.forEach(btn => {
+        btn.addEventListener('click', () => {
+          tabs.forEach(b => b.classList.remove('active'));
+          panels.forEach(p => p.classList.remove('active'));
+          btn.classList.add('active');
+          const target = btn.getAttribute('data-tab');
+          const panel = document.getElementById(`tab-${target}`);
+          if (panel) panel.classList.add('active');
+        });
+      });
+    });
+  </script>
+</body>
+</html>
