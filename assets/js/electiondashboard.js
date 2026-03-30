@@ -45,6 +45,8 @@ document.addEventListener('DOMContentLoaded', function () {
         // LTS (lokaal Baarn)
         'LTS (Lijst Tinus Snyders)': 'LTS',
         'L T S (Lijst Tinus Snyders)': 'LTS',
+        // ChristenUnie-SGP (combinatielijst GR2014/2018) → ChristenUnie
+        'ChristenUnie-SGP': 'ChristenUnie',
         // GL/PvdA samengevoegd + toekomstige opvolgers
         'GROENLINKS / Partij van de Arbeid (PvdA)': 'GroenLinks-PvdA',
         'GroenLinks / Partij van de Arbeid (PvdA)': 'GroenLinks-PvdA',
