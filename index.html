@@ -85,33 +85,29 @@
 
     <!-- TABS -->
     <nav class="mb-4 border-b">
-      <div class="flex gap-4">
-        <button class="tab-button py-2 px-3 active" data-tab="overzicht" type="button">Overzicht</button>
-        <button class="tab-button py-2 px-3" data-tab="kaart" type="button">Kaart</button>
-        <button class="tab-button py-2 px-3" data-tab="zetels" type="button">Zetelverdeling</button>
-        <button class="tab-button py-2 px-3" data-tab="analyse" type="button">Analyse</button>
+      <div class="flex flex-wrap gap-1">
+        <button class="tab-button py-2 px-3 active" data-tab="overzicht"    type="button">Overzicht</button>
+        <button class="tab-button py-2 px-3"         data-tab="kaart"        type="button">Kaart</button>
+        <button class="tab-button py-2 px-3"         data-tab="historisch"   type="button">Historisch</button>
+        <button class="tab-button py-2 px-3"         data-tab="zetels"       type="button">Zetelverdeling</button>
+        <button class="tab-button py-2 px-3"         data-tab="analyse"      type="button">Analyse</button>
       </div>
     </nav>
 
     <!-- TAB: OVERZICHT -->
-    <section id="overzicht" class="tab-content active">
-      <!-- Je JS vult dit paneel (canvas wordt dynamisch gemaakt) -->
-    </section>
+    <section id="overzicht" class="tab-content active"></section>
 
     <!-- TAB: KAART -->
-    <section id="kaart" class="tab-content">
-      <!-- Je JS injecteert hier de kaart-HTML en maakt #map-inner-container aan -->
-    </section>
+    <section id="kaart" class="tab-content"></section>
+
+    <!-- TAB: HISTORISCH -->
+    <section id="historisch" class="tab-content"></section>
 
     <!-- TAB: ZETELVERDELING -->
-    <section id="zetels" class="tab-content">
-      <!-- Je JS schrijft hier de zetelverdeling-HTML -->
-    </section>
+    <section id="zetels" class="tab-content"></section>
 
     <!-- TAB: ANALYSE -->
-    <section id="analyse" class="tab-content">
-      <!-- Je JS schrijft hier de analyse (historisch of 2026) -->
-    </section>
+    <section id="analyse" class="tab-content"></section>
   </div>
 
   <footer class="py-8 text-center text-sm text-slate-500">
@@ -121,23 +117,9 @@
   <!-- Jouw script als laatste -->
   <script src="assets/js/electiondashboard.js" defer></script>
   <script defer>
-    // Jaar in footer
     document.addEventListener('DOMContentLoaded', () => {
       const y = document.getElementById('year');
       if (y) y.textContent = new Date().getFullYear();
-
-      // Simpele tab-actie: jouw JS gebruikt .tab-button en .tab-content
-      const tabs = document.querySelectorAll('.tab-button');
-      const panels = document.querySelectorAll('.tab-content');
-      tabs.forEach(btn => {
-        btn.addEventListener('click', () => {
-          tabs.forEach(b => b.classList.remove('active'));
-          panels.forEach(p => p.classList.remove('active'));
-          btn.classList.add('active');
-          const target = btn.getAttribute('data-tab');
-          document.getElementById(target)?.classList.add('active');
-        });
-      });
     });
   </script>
 </body>
