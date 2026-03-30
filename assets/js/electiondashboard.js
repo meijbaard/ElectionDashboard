@@ -36,9 +36,12 @@ document.addEventListener('DOMContentLoaded', function () {
         'Forum voor Democratie': 'FvD',
         // NSC
         'Nieuw Sociaal Contract': 'NSC',
-        // BVNL
+        // BVNL (diverse schrijfwijzen)
         'BVNL / Groep Van Haga': 'BVNL',
         'Belang van Nederland (BVNL)': 'BVNL',
+        'Belang Van Nederland (BVNL)': 'BVNL',
+        // NSC (met en zonder afkorting)
+        'Nieuw Sociaal Contract (NSC)': 'NSC',
         // BOP (lokaal Baarn)
         'Baarnse Onafhankelijke Partij': 'BOP',
         'Baarnse Onafhankelijke Partij (BOP)': 'BOP',
@@ -624,20 +627,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
             let dAny = '', dSame = '';
             if (prevAnyData && prevAnyData.total > 0) {
-                const prev = (prevAnyData.parties[party] || 0) / prevAnyData.total * 100;
-                const d    = pct - prev;
-                const sign = d >= 0 ? '+' : '';
-                const cls  = d >= 0 ? 'text-green-600' : 'text-red-500';
-                dAny = `<td class="px-3 py-2 text-right text-sm font-medium ${cls}">${sign}${d.toFixed(1)}%</td>`;
+                if (party in prevAnyData.parties) {
+                    const prev = prevAnyData.parties[party] / prevAnyData.total * 100;
+                    const d    = pct - prev;
+                    const sign = d >= 0 ? '+' : '';
+                    const cls  = d >= 0 ? 'text-green-600' : 'text-red-500';
+                    dAny = `<td class="px-3 py-2 text-right text-sm font-medium ${cls}">${sign}${d.toFixed(1)}%</td>`;
+                } else {
+                    // Partij deed niet mee aan vorige verkiezing → geen zinvolle vergelijking
+                    dAny = `<td class="px-3 py-2 text-right text-slate-400 text-sm">nieuw</td>`;
+                }
             } else if (prevAny) {
                 dAny = `<td class="px-3 py-2 text-right text-slate-400 text-sm">—</td>`;
             }
             if (prevSameData && prevSameData.total > 0) {
-                const prev = (prevSameData.parties[party] || 0) / prevSameData.total * 100;
-                const d    = pct - prev;
-                const sign = d >= 0 ? '+' : '';
-                const cls  = d >= 0 ? 'text-green-600' : 'text-red-500';
-                dSame = `<td class="px-3 py-2 text-right text-sm font-medium ${cls}">${sign}${d.toFixed(1)}%</td>`;
+                if (party in prevSameData.parties) {
+                    const prev = prevSameData.parties[party] / prevSameData.total * 100;
+                    const d    = pct - prev;
+                    const sign = d >= 0 ? '+' : '';
+                    const cls  = d >= 0 ? 'text-green-600' : 'text-red-500';
+                    dSame = `<td class="px-3 py-2 text-right text-sm font-medium ${cls}">${sign}${d.toFixed(1)}%</td>`;
+                } else {
+                    dSame = `<td class="px-3 py-2 text-right text-slate-400 text-sm">nieuw</td>`;
+                }
             } else if (prevSame) {
                 dSame = `<td class="px-3 py-2 text-right text-slate-400 text-sm">—</td>`;
             }

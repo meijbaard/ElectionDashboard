@@ -48,7 +48,16 @@ const ELECTIONS = [
     csvFile: 'PS2023_Stemmen_Per_Lijst_Per_Stembureau.csv',
     hasPostcode: true,
   },
+  {
+    key: '2025_tk',
+    url: 'https://data.overheid.nl/sites/default/files/dataset/a16f3352-c9ce-4831-a314-f989d442a258/resources/Verkiezingsuitslag%20Tweede%20Kamer%202025%20%28CSV%20Formaat%29.zip',
+    csvFile: 'TK2025_Stemmen_Per_Lijst_Per_Stembureau.csv',
+    hasPostcode: true,
+  },
 ];
+
+// Stembureaus die nooit echte stembureaus zijn (reservelijsten etc.)
+const EXCLUDED_BUREAUS = ['RESERVELIJST', 'reservelijst'];
 
 // ─── Postcode lookup via stembureaunaam ───────────────────────────────────────
 // TK2010 heeft geen postcodes in de data; we zoeken op (genormaliseerde) naam
@@ -175,6 +184,8 @@ function parseLongCsv(csvPath, electionKey, hasPostcode, nameToPostcode) {
     if (gemCode !== BAARN_ID && gemNaam !== 'baarn') continue;
 
     const bureauNaam = (cols[iBureauNm] || '').trim();
+    // Sla reservelijsten en niet-echte stembureaus over
+    if (EXCLUDED_BUREAUS.some(ex => bureauNaam.includes(ex))) continue;
     const bureauId   = (cols[iBureauId] || `SB${i}`).trim();
     let   postcode   = (cols[iPostcode] || '').replace(/\s/g, '').trim();
     const partijNaam = (cols[iPartij]   || '').trim();
